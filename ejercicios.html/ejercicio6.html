@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>src="/ejercicios.js/Ejercicio6.js"</script>
+
+    <script>
+    
+    // Solicitar al usuario los valores de los lados del rectángulo
+        let ladoA = prompt("Ingrese el valor del lado A del rectángulo:");
+        let ladoB = prompt("Ingrese el valor del lado B del rectángulo:");
+        
+        // Convertir los valores ingresados a números
+        ladoA = Number(ladoA);
+        ladoB = Number(ladoB);
+        
+        // Función para calcular el perímetro del rectángulo
+        function calcularPerimetroRectangulo(a, b) {
+          return 2 * (a + b);
+        }
+        
+        // Calcular el perímetro del rectángulo
+        let perimetro = calcularPerimetroRectangulo(ladoA, ladoB);
+        
+        // Mostrar el resultado por pantalla
+        document.write(`El perímetro del rectángulo es: ${perimetro}`);
+        </script>
+
+   
+        
+</body>
+</html>
